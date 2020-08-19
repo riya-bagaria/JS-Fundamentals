@@ -31,6 +31,10 @@ const obj2 = {
 
 // Pass by refrence
 const pureFunction = (obj) => {
+	// Alternate
+	// let obj2 = {...obj};
+	// let obj2 =Object.assign(obj)
+	//Problem - serialisation of function
 	let obj2 = JSON.parse(JSON.stringify(obj));
 	obj2.a ="abc";
 	obj2 = {c:1};
@@ -38,5 +42,5 @@ const pureFunction = (obj) => {
 	return obj2;
 }
 
-console.log("Pure function", obj2)  // {a: "a", b: "b"}
 pureFunction (obj2);   //  {c:1}
+console.log("Pure function", obj2)  // {a: "a", b: "b"}

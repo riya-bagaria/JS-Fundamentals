@@ -1,3 +1,6 @@
+// Source
+// https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20%26%20object%20prototypes/ch5.md
+// https://medium.com/@ajmeyghani/interview-questions-1145e3763bce
 /**
  * Proptotype is the internal property of the Object which is reference to an another object.
  * The top end of prototype chain is built in Object.Prototype. Where all the propeties desceds like toString etc
@@ -67,8 +70,6 @@ console.log(senario2Object1.a) //a
 senario2Object1.a ="b"; // It doesn't set the property directly to the object or modify at the higher level.
 console.log(senario2Object1.a) //a
 
-
-//  Doubt
 // ------------------------------------------------------------------------------------------------
 // ------------------------------------------- Senario 3 ------------------------------------------
 // If a foo is found higher on the [[Prototype]] chain and it's a setter, then the setter will always
