@@ -33,7 +33,7 @@ for (var k in object3) {
 // But it is available on the higher prototype chain. The property get added to the object itself.
 // Propety will be availbe directly on the object and it prototype which result in shadowing the propety.
 // While accessing the propety it never lookup the property to the highter prototype chain as it is available 
-// directly on the object, which means it is shadowing the propery.
+// directly on the object, which means it is shadowing the property.
 
 // There are different senarios when the property is not directly available on the object but at hight prototype level
 
@@ -42,6 +42,7 @@ for (var k in object3) {
 // When propety is not directly available on the object and available at higher prototype level 
 // and not marked as read only - The property gets added directly to the object
 // ------------------------------------------------------------------------------------------------
+// enumerable - iteratable
 const myObject1 = {a:1};
 const myObject2 = Object.create(myObject1);
 myObject2.a=3;
@@ -122,8 +123,8 @@ console.log(Foo.prototype === Object.getPrototypeOf(newObj1)); // Side effect of
 
 
 
-
-
+http://julien.richard-foy.fr/blog/2011/10/30/functional-inheritance-vs-prototypal-inheritance/
+103 https://andersonguelphjs.github.io/OReilly_JavaScript_The_Good_Parts_May_2008.pdf
 
 
 
